@@ -1,0 +1,91 @@
+body {
+    font-family: 'Saira', sans-serif;
+    font-weight: 400;
+    background-color: #141414;
+    text-align: center;
+}
+
+#logo {
+    font-size: 30px;
+    position: absolute;
+    right: 90%;
+    top: 3%;
+
+}
+
+main {
+    margin: 5% 10%;
+}
+
+h1 {
+    font-size: 84px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: left;
+    color:whitesmoke;
+}
+p { 
+    font-size: 18px;
+    color:whitesmoke;
+}
+
+table, td, th {
+    color: antiquewhite;
+    border: 2px solid rgb(0, 195, 255) !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-size: 22px;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    right: 15%;
+}
+
+
+#intro {
+    border: rgb(0, 195, 255) solid 3px;
+    background-color: rgb(243, 238, 232);
+    display: flex;
+    color: black;
+    font-size: 24px;
+}
+
+#yap {
+    text-align: left;
+    font-size: 22px;
+    padding: 2%;
+}
+
+ol {
+    list-style-position: outside;
+    color: aqua;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 50px;
+}
+
+
+/* color id */
+
+#perfect {
+    color:rgb(255, 208, 0);
+}
+
+#good {
+    color: rgba(0, 102, 255, 0.993);
+}
+
+#bad {
+    color: rgb(245, 77, 35);
+}
