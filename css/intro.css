@@ -1,44 +1,13 @@
-body {
-    font-family: 'Saira', sans-serif;
-    font-weight: 400;
-    background-color: #141414;
-    text-align: center;
-}
-
-#logo {
-    font-size: 30px;
-    position: absolute;
-    right: 90%;
-    top: 3%;
-
-}
-
-main {
-    margin: 5% 10%;
-}
-
-h1 {
-    font-size: 84px;
-    text-align: center;
-    color:whitesmoke;
-}
-
-h2 {
-    font-size: 36px;
-    text-align: left;
-    color:whitesmoke;
-}
-p { 
-    font-size: 18px;
-    color:whitesmoke;
-}
-
 table, td, th {
     color: antiquewhite;
-    border: 2px solid rgb(0, 195, 255) !important;
+    border: 2px solid azure !important;
     text-align: center !important;
     vertical-align: middle !important;
     font-size: 22px;
+}
+
+.split {
+    border-bottom: 2px solid rgb(0, 195, 255) !important;
 }
 
 table {
@@ -51,7 +20,7 @@ table {
 
 
 #intro {
-    border: rgb(0, 195, 255) solid 3px;
+    border: rgb(0, 195, 255) solid 2px;
     background-color: rgb(243, 238, 232);
     display: flex;
     color: black;
@@ -64,9 +33,15 @@ table {
     padding: 2%;
 }
 
+h2 {
+    font-size: 50px;
+    color: whitesmoke;
+    border-bottom: solid 1px rgb(0, 195, 255);
+}
+
 ol {
     list-style-position: outside;
-    color: aqua;
+    color: rgb(0, 195, 255);
     padding: 0;
     margin: 0;
 }

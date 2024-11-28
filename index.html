@@ -12,20 +12,53 @@
 </style>
 
 <body>
-    <h1>An introduction to <span style="text-shadow: rgb(0, 204, 255) 0 0 10px">Phigros</span></h1>
-    <h2> A "laneless" music game, bringing you a refreshing rhythm experience like never before!</h2>
-    <br>
-    <div class="btn-group-vertical btn-group-lg" style="margin-left: 30%; display:flex; margin-right: 30%;">
-        <button type="menu" class="btn btn-outline-light" onclick="window.location.href='page/intro.html';">Introduction and quick tutorial</button> 
-        <button type="menu" class="btn btn-outline-light" onclick="window.location.href='page/wowzzers.html';">Popular songs</button>
-        <button type="menu" class="btn btn-outline-light" onclick="window.location.href='p/introplus.html';">Advanced mechanisms</button>
-    </div>
-    <br>
-    <h2>Gameplay footage (ctto @WoongCha)</h2>
-    <div align="center">
-    <iframe width="720" height="404" src="https://www.youtube.com/embed/74ETQ97KuQs?si=kwJ00aabiINVZ9Mh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <br>
-<button type="button" class="btn btn-outline-info" onclick="window.location.href='survey.html';">Survey for improvements</button>
+    <header>
+        <div class="btn-group-horizontal btn-group-lg">
+            <button type="button" 
+                    class="btn btn-outline-info" 
+                    onclick="window.location.href='index.html';">
+                ⌂ Home
+            </button>
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='page/intro.html';">
+                Introduction and quick tutorial
+            </button> 
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='page/wowzzers.html';">
+                Popular songs
+            </button>
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='p/introplus.html';">
+                Advanced mechanisms
+            </button>
+        </div>
+
+        
+        <h1>An introduction to <span style="text-shadow: rgb(0, 204, 255) 0 0 10px">Phigros</span></h1>
+        <h3>A "laneless" music game, bringing you a refreshing rhythm experience like never before!</h3>
+    </header>
+
+    <main>
+        <h2>Gameplay Footage
+        <em>(ctto <a href="https://www.youtube.com/@WoongCha">@WoongCha</a>)</em></h2>
+        
+        <div class="container">
+            <iframe class="responsive-iframe"
+                    src="https://www.youtube.com/embed/74ETQ97KuQs?si=kwJ00aabiINVZ9Mh" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen="true">
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <button type="button" class="btn btn-outline-info" onclick="window.location.href='page/survey.html';">Survey for improvements</button>
+    </footer>
 </body>
 </html>
