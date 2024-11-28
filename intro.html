@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>placeholder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+body{
+    font-family: 'Saira', sans-serif;
+    font-weight: 400;
+    background-color: #141414;
+    padding: 10%;
+}
+h1{
+    font-size: 84px;
+    text-align: center;
+    color:whitesmoke;
+}
+h2{
+    font-size: 36px;
+    text-align: center;
+    color:whitesmoke;
+}
+p{font-size: 18px;
+color:whitesmoke;}
+em{color: rgb(245, 77, 35);}
+table{color: antiquewhite; text-align: center;}
+</style>
+<body>
+    <button type="button" class="btn btn-outline-info" onclick="window.location.href='a.html';" style="font-size: 24px;">⌂ Home</button>
+<h1>So, how does this game even work?</h1>
+<p style="border: rgb(0, 195, 255) solid 3px; background-color: rgb(243, 238, 232); margin-left: 20%; margin-right: 20%; display: flex; color: black; font-size: 24px;"> This is a quick and simple tutorial if you want to try it out (or if you somehow cant keep up with the in-game tutorial). Afterwards, you should have a basic understanding of Phigros (i hope).</p>
+<h2>1. Notes</h2>
+<table class="table">
+    <thead style="text-align: center; font-size: 22px;">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Type of note</th>
+        <th scope="col">Description</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Tap notes</td>
+        <td>Tap notes are colored sky blue. Tap <em>once</em> when they reach the judgement line</td>
+        <td style="text-align: center;"><img src="tap2.png" width="40%"><br><img src="tap.png" width="40%"></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Hold notes</td>
+        <td>Hold notes are colored sky blue. <em>Tap and hold</em> when they reach the judgement line, and keep holding until it fully passes over the line.</td>
+        <td style="text-align: center;"><img src="hold.png" style="margin-right: 20px;"><img src="hold2.png" style="margin-left: 20px;"></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Flick notes</td>
+        <td>Flick notes are colored red. Flick in <em>any direction</em> when they reach the judgement line.</td>
+        <td style="text-align: center;"><img src="flick.png" width="40%"><br><img src="flick2.png" width="40%"></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Drag notes</td>
+        <td>Drag notes are colored yellow, and often appear in large amounts at once. <em>Hold</em> (you dont need to tap them constantly) when they reach the judgement line.</td>
+        <td style="text-align: center;"><img src="drag.png" width="40%"><br><img src="drag2.png" width="40%"></td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>2. Judgement line</h2>
+  <p>This is what makes Phigros unique. You should <em>NOT</em> expect it to be a single static line like classic rhythm games (<a href="https://www.youtube.com/watch?v=JWj98KJVuAQ">mania-style</a>)</p>
+  <p style="text-align: center;" >This should explain why ↓</p>
+  <div align="center">
+  <iframe width="720" height="404" src="https://www.youtube.com/embed/8aIQrMyslT8?si=WhwMmjE8a9GhuBFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <p>Judgement lines may rotate, change opacity and move around the screen. There may be multiple judgement lines. Notes may approach their respective judgement lines from any position on the screen, and can also serve as judgement lines themselves. The edge of the screen may also serve as a judgement line.</p>
+  <p>Judgement lines are usually white, but if 'FC/AP indicator' is turned on in Settings, they will be colored yellow when on track for an <span style="color:rgb(255, 208, 0);">AP (All-Perfect)</span>, and blue if on track for a <span style="color: rgba(0, 102, 255, 0.993);">FC (Full Combo)</span>
+  <h2>3. Judgement</h2>
+  <p>When hitting a note, you must hit it inside a vertical column extending from the note to the edges of the screen to register as a valid hit. When correctly doing so, you will get one of three different judgements, Perfect, Good or Bad, depending on the accuracy of the hit. If the note wasn't hit at all, or not hit inside the column, you will get a Miss. Each judgement will give a certain amount of accuracy and changes in the combo count.</p>
+  <table class="table">
+      <tr style="text-align: center; font-size: 22px;">
+        <th rowspan="2">Judgement</th>
+        <th rowspan="2">Combo</th>
+        <th rowspan="2">Accuracy</th>
+        <th colspan="2">Timing window</th>
+      </tr>
+      <tr style="text-align: center; font-size: 22px;">
+      <td>Normal mode</td>
+      <td>Challenge mode</td>
+      </tr>
+      <tbody style="font-size: 22px;">
+      <tr>
+        <th scope="row" style="color:rgb(255, 208, 0);">Perfect</th>
+        <td rowspan="2"> Increases by 1</td>
+        <td> 100% </td>
+        <td>±80ms</td>
+        <td>±40ms</td>
+      </tr>
+      <tr>
+        <th scope="row" style="color: rgba(0, 102, 255, 0.993);">Good</th>
+        <td>60%</td>
+        <td>±160ms</td>
+        <td>±75ms</td>
+      </tr>
+      <tr>
+        <th scope="row" style="color: rgb(245, 77, 35);">Bad</th>
+        <td rowspan="2">Resets back to 0</td>
+        <td rowspan="2">0%</td>
+        <td>±180ms</td>
+        <td>±140ms</td>
+      </tr>
+      <tr>
+        <th scope="row">Miss</th>
+        <td colspan="2"> N/A</td>
+      </tr>
+    </tbody>
+  </table>
