@@ -23,9 +23,44 @@ h2{
     color:whitesmoke;
 }
 p {color: antiquewhite;}
+label{color: antiquewhite;}
 </style>
 </head>
 <body>
-<p>hi chat</p>
+  <button type="button" class="btn btn-outline-info" onclick="window.location.href='a.html';" style="font-size: 24px;">⌂ Home</button>
+<h2>filling this form helps the site improve by 1%!</h2>
+<div align="center" style="text-align: left;">
+<form>
+        <label for="mail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="mail" placeholder="e.g. abc123@gmail.com">
+        <label for="name" class="form-label">What should we refer you as?</label>
+        <textarea class="form-control" id="name"></textarea>
+        <label for="msg" class="form-label">Message for the developer(s)</label>
+        <textarea class="form-control" id="msg" rows="7"></textarea>
+        <p>Your rating for the site? (1 being the lowest and 5 the highest)</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="options" id="1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="options" id="2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="options" id="3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="options" id="4" value="option4">
+            <label class="form-check-label" for="inlineRadio3">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="options" id="5" value="option5">
+            <label class="form-check-label" for="inlineRadio3">5</label>
+          </div>
+</form>
+</div>
+<br>
+<button type="button" class="btn btn-light btn-lg">Submit</button>
 </body>
 </html>
