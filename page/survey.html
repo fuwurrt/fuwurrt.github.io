@@ -1,66 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>placeholder</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
-body{
-    font-family: 'Saira', sans-serif;
-    font-weight: 400;
-    background-color: #141414;
-    padding: 10%;
-}
-h1{
-    font-size: 84px;
-    text-align: center;
-    color:whitesmoke;
-}
-h2{
-    font-size: 36px;
-    text-align: center;
-    color:whitesmoke;
-}
-p {color: antiquewhite;}
-label{color: antiquewhite;}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Survey</title>
+
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+    </style>
 </head>
+
 <body>
-  <button type="button" class="btn btn-outline-info" onclick="window.location.href='index.html';" style="font-size: 24px;">⌂ Home</button>
-<h2>filling this form helps the site improve by 1%!</h2>
-<div align="center" style="text-align: left;">
-<form>
-        <label for="mail" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="mail" placeholder="e.g. abc123@gmail.com">
-        <label for="name" class="form-label">What should we refer you as?</label>
-        <textarea class="form-control" id="name"></textarea>
-        <label for="msg" class="form-label">Message for the developer(s)</label>
-        <textarea class="form-control" id="msg" rows="7"></textarea>
-        <p>Your rating for the site? (1 being the lowest and 5 the highest)</p>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="options" id="1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">1</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="options" id="2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">2</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="options" id="3" value="option3">
-            <label class="form-check-label" for="inlineRadio3">3</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="options" id="4" value="option4">
-            <label class="form-check-label" for="inlineRadio3">4</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="options" id="5" value="option5">
-            <label class="form-check-label" for="inlineRadio3">5</label>
-          </div>
-</form>
-</div>
-<br>
-<button type="button" class="btn btn-light btn-lg">Submit</button>
+    <header>
+        <!-- Navigation Bar -->
+        <div class="btn-group-horizontal btn-group-lg">
+            <button type="button" 
+                    class="btn btn-outline-info" 
+                    onclick="window.location.href='../index.html';">
+                ⌂ Home
+            </button>
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='intro.html';">
+                Introduction and quick tutorial
+            </button> 
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='wowzzers.html';">
+                Popular songs
+            </button>
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='introplus.html';">
+                Advanced mechanisms
+            </button>
+        </div>
+
+        <!-- Page Title-->
+        <h2>filling this form helps the site improve by 1%!</h2>
+    </header>
+
+    <main> <!-- Page Details -->
+        <div style="position: relative; overflow: hidden; width: 100%">
+            <form>
+                <label for="mail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="mail" placeholder="e.g. abc123@gmail.com">
+                <label for="name" class="form-label">What should we refer you as?</label>
+                <textarea class="form-control" id="name" placeholder="Your First Name, Your IGN (Ingame name), anonymous also works!"></textarea>
+                <label for="msg" class="form-label">Message for the developer(s)</label>
+                <textarea class="form-control" id="msg" rows="7" placeholder="we may or may not read what you send"></textarea>
+                <p>Your rating for the site? (1 being the lowest and 5 the highest)</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="options" id="1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="options" id="2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="options" id="3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="options" id="4" value="option4">
+                    <label class="form-check-label" for="inlineRadio3">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="options" id="5" value="option5">
+                    <label class="form-check-label" for="inlineRadio3">5</label>
+                </div>
+            </form>
+        </div>
+        <br>
+        <button type="button" class="btn btn-light btn-lg">Submit</button>            
+    </main>
+
+    <footer> <!-- Extra Informations About the Web -->
+
+    </footer>
 </body>
 </html>
