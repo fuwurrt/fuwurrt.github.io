@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>A Guide to Phigros</title>
+    
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/intro.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <div class="btn-group-horizontal btn-group-lg">
+            <button type="button" 
+                    class="btn btn-outline-info" 
+                    onclick="window.location.href='../index.html';">
+                ⌂ Home
+            </button>
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='intro.html';">
+                Introduction and quick tutorial
+            </button> 
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='wowzzers.html';">
+                Popular songs
+            </button>
+            <button type="menu" 
+                    class="btn btn-outline-light" 
+                    onclick="window.location.href='introplus.html';">
+                Advanced mechanisms
+            </button>
+        </div>
+    <h1>MORE into the mechanisms of this such of a rhythm game</h1>
+    <p style="border: rgb(0, 195, 255) solid 3px; background-color: rgb(243, 238, 232); margin-left: 10%; margin-right: 10%; display: flex; color: black; font-size: 24px;"> Have you ever wondered, why does that AP but 1 miss score of you only get you a mere score of 950k (S rank)? This page will take you to the advanced mechanisms of how scores are graded, and more!</p>
+    <h2>1. Scoring system</h2>
+    <p>Score is comprised of two factors, accuracy and the highest achieved combo.</p>
+    <img src="../image/4mula.png" width="640" class="center"> <br>
+    <p>To put in exmaple, think about the sample mentioned above. Chances are, you have <em id="bad">"successfully"</em> missed a note right in the middle, leading to the combo percentage being only around 50%. In other words, you lost 50,000 points from breaking the combo halfway.</p>
+    <img src="../image/gplay.jpg" width="720" class="center">
+    <p>Let's have a small practice with this random score found on the Internet.</p>
+    <p id="yap">Given the pre-calculated accuracy, lets "fact check" it using the formula provided -> 1293 + 46*0.65 / 1293 + 46 + 5 <br>
+    The result provided by my Casio-fx**580 (** is a certain country) is 0.9843, or <span id="perfect">98,43%!</span> (haha basic math)<br>
+    Now for the combo percentage, it will be 1014/1293 + 46 + 5, which gives the result of around <span id="perfect">75.45%</span><br>
+    Putting it all toghether, we should have the score given:<br>
+    <span id="perfect">900.000*98,43% + 100.000*75.45% ~ 961.320</span>, pretty close to it considering the rounding ups we have done.<br><br>
+    When completing a song, the player is taken to the results screen. Upon the image above, they are shown their score, accuracy, and a rank based on their score. A rank or above counts as a clear. </p>
+    <p style="font-size: 28px;">Rankings based on the score obtained:</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th rowspan="2" class="split">Grade</th>
+                <th colspan="2" class="split">Score range</th>
+            </tr>
+            <tr>
+                <td>Normal</th>
+                <td>Challenge mode</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><img src="../image/phi.png" width="70"></th>
+                <td><span id="perfect">1.000.000</span> (All Perfect)</td>
+                <td>Obtain <span id="perfect">All Perfect</span> on all 3 songs chosen.</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/fc.png" width="70"></th>
+                <td><span id="good">Full Combo</td>
+                <td>Obtain <span id="good">Full Combo</span> on all 3 songs chosen.</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/vwhite.png" width="70"></th>
+                <td>960.000-999.999</td>
+                <td>2.880.000-2.999.999</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/s.png" width="70"></th>
+                <td>920.000-959.999</td>
+                <td>2.760.000-2.879.999</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/a.png" width="70"></th>
+                <td>880.000-919.999</td>
+                <td>2.640.000-2.759.999</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/b.png" width="70"></th>
+                <td>820.000-879.999</td>
+                <td>2.460.000-2.639.999</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/c.png" width="70"></th>
+                <td>700.000-819.999</td>
+                <td>2.100.000-2.459.999</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/fail.png" width="70"></th>
+                <td id="bad">< 700.000</td>
+                <td id="bad">< 2.100.000</td>
+            </tr>
+        </tbody>
+        </table>
+    <div id="chal" name="chal">
+    <h2>2. Challenge mode</h2>
+    <p id="yap">Have you wondered, what is Challenge Mode and why have we kept yapping about it for so long before?
+         Challenge Mode is a separate game mode introduced in version 2.0.0 and is unlocked upon completing the last main chapter (currently Chapter VIII).
+          In this mode, the player selects three songs and their difficulty, then plays all three charts back to back.
+           The same chart can not be selected more than once, but multiple difficulties of the same song can. Legacy charts cannot be selected at all. Mirror charts ,SP charts and reseting is also not allowed.<br><br>
+        In Challenge Mode, the timing windows for the judgements are stricter than regular play, being ±40ms for
+         <span id="perfect">Perfect</span>, ±75ms for <span id="good">Good</span> and ±140ms for <span id="bad">Bad</span>.
+          The scoring system is also different, not using combo in scoring at all and using accuracy alone.</p>
+    </div>
+    <h2>3. Rating</h2>
+    <p id="yap">Upon completing a Challenge Mode run, you are not only given a rank, but also a rating with a number and background that you may choose to accept or not (wow such colorful i love).
+         The number is the sum of the difficulty ratings of the three charts you played, while the background is based on the sum of the scores you got on those levels.
+          If your score is below 2,460,000, no rating is awarded at all.</p>
+    <p style="font-size: 28px;">Another table for you to understand:</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Background</th>
+                <th scope="col">Total score range</th>
+                <th scope="col">Average song score (minimum requirement)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"><img src="../image/gay.png" width="144"></th>
+                <td><span id="perfect">3.000.000</span></td>
+                <td><span id="perfect">All Perfect</span> on each song.</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/piss.png" width="144"></th>
+                <td>2.940.000-2.999.999</td>
+                <td>980.000</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/badpiss.png" width="144"></th>
+                <td>2.850.000-2.939.999</td>
+                <td>950.000</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/cyan.png" width="144"></th>
+                <td>2.700.000-2.849.999</td>
+                <td>900.000</td>
+            </tr>
+            <tr>
+                <th scope="row"><img src="../image/green.png" width="144"></th>
+                <td>2.460.000-2.699.999</td>
+                <td>900.000</td>
+            </tr>
+            <tr>
+                <th scope="row" id="bad">No backgrounds given.</th>
+                <td colspan="2" id="split">N/A</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="diff" name="diff">
+    <h2>4. Charts difficulty</h2>
+    <p id="yap">In Phigros, most songs have three difficulties each: Easy (EZ), Hard (HD), and Insane (IN).
+        The EZ and HD difficulties of an unlocked song will be available by default.
+        If your Ranking Score is 11 or higher, the IN difficulty of all the songs in Legacy and Single Chapter and the first song in each chapter will also be unlocked.
+        To unlock a higher difficulty of a song, you must either get an S rank or higher on the previous diffifculty of the song,
+        or get an A rank or higher on the same difficulty of the previous song in the chapter (only applies to certain songs rerquired).
+        There is also the Another (AT) difficulty, which is only available for some songs, and the Special (SP) difficulty, which is exclusive to hidden songs.
+        Each chart has a difficulty level, a value that indicates the chart's difficulty. 
+        Each value except "?" is specified to the first decimal digit, but is truncated to an integer in-game. (The extra digit is used in calculating Ranking Score.) 
+        Currently, it ranges from 1 to 16, with 1 (1.0) being the easiest and 16 (16.8) being the hardest. The difficulty "?" is only for SP (usually during April Fools).</p>
+    </div>
+    <h2>5. Ranking score (RKS)</h2>
+    <p id="yap">The Ranking Score is a number the game uses to model the skill of a player (though its accuracy is debatable). 
+        Ranking Score is based entirely on a player's accuracy in charts, instead of their scores. <br> <br>
+        A player's Ranking Score is based on their best 19 or 20 plays according to their RKS value.</p>
+        <img src="../image/rating.png" width="640" class="center"> <br>
+    <p id="yap">During this calculation, an extra decimal point of precision is used for the <a href="introplus.html#diff">chart difficulty.</a>
+        While this decimal place isn't directly visible, it's accounted for when sorting songs by difficulty and can be used to figure it out.
+        The 19 highest RKS values that the player has achieved are added together, along with
+        the highest RKS value that the player has achieved that is also 100% accuracy ( <img src="../image/phi.png"> rank - if the player has not achieved 100% accuracy in any song, this value is 0).
+        Then, the sum is divided by 20 to get the player's Ranking Score.</p>
+</body>
+<footer> <!-- Extra Informations About the Web -->
+    <p style="font-size: 36px; color: rgb(250, 201, 138);"> More updates are coming soon...</p>
+    <button type="button" 
+            class="btn btn-outline-info" 
+            onclick="window.location.href='survey.html';">
+        Survey for improvementss
+    </button>
+</footer>
+</html>
