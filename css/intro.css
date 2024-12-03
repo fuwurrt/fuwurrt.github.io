@@ -50,6 +50,11 @@ li {
     font-size: 50px;
 }
 
+ul {
+    font-size: 36px;
+    color:rgb(250, 231, 145);
+    text-align: left;
+}
 
 /* color id */
 
